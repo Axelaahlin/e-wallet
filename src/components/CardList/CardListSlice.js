@@ -8,24 +8,6 @@ const CardListSlice = createSlice({
   name: "cardList", 
   initialState: {
     cards: [
-      {
-        bank: "Swedbank",
-        cardNumber:  "2546 5789 0027 7895", 
-        cardholder: "Axel Åhlin Andersson",
-        expireMonth: "08",
-        expireYear: "28",
-        CCV: "095",
-        Id: 1
-      },
-      {
-        bank: "SEB",
-        cardNumber:  "245 5680 5214 8888", 
-        cardholder: "Axel Åhlin Andersson",
-        expireMonth: "02",
-        expireYear: "22",
-        CCV: "409", 
-        Id: 2
-      }
     ], 
     activeCard:[{
       bank: "Swedbank",
@@ -34,9 +16,9 @@ const CardListSlice = createSlice({
       expireMonth: "00",
       expireYear: "00",
       CCV: "000",
-      Id: 3
+      Id: 1
     }],
-    latestId: 3,
+    latestId: 1,
     user: null
   }, 
   reducers: {
